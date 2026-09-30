@@ -1,0 +1,6 @@
+# Reporte generado localmente (se reproduce con generate_report.py)
+reporte.html
+
+# Python
+__pycache__/
+*.pyc

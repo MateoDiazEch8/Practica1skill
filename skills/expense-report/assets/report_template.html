@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Reporte de gastos</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:800px;margin:2rem auto;padding:0 1rem;color:#222}
+.cards{display:flex;gap:1rem}.card{flex:1;background:#f3f6fb;border-radius:8px;padding:1rem}
+.card b{display:block;font-size:1.5rem}
+table{border-collapse:collapse;width:100%;margin:.5rem 0 1.5rem}td,th{border-bottom:1px solid #ddd;padding:.4rem;text-align:left}
+</style></head><body>
+<h1>Reporte de gastos</h1>
+<div class="cards">
+<div class="card">Total<b>{{TOTAL}}</b></div>
+<div class="card">Gastos<b>{{COUNT}}</b></div>
+<div class="card">Categoría principal<b>{{TOP_CATEGORY}}</b></div>
+</div>
+<h2>Por categoría</h2><table><tr><th>Categoría</th><th>Monto</th><th>%</th></tr>{{CATEGORY_ROWS}}</table>
+<h2>Por mes</h2><table><tr><th>Mes</th><th>Monto</th></tr>{{MONTH_ROWS}}</table>
+<h2>Mayores gastos</h2><table><tr><th>Fecha</th><th>Descripción</th><th>Categoría</th><th>Monto</th></tr>{{TOP_ROWS}}</table>
+<h2>Advertencias</h2><ul>{{WARNINGS}}</ul>
+</body></html>

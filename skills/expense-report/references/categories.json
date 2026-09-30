@@ -1,0 +1,13 @@
+{
+  "categorias": ["alimentacion", "transporte", "vivienda", "salud", "ocio", "educacion", "otros"],
+  "alias": {
+    "comida": "alimentacion",
+    "super": "alimentacion",
+    "taxi": "transporte",
+    "bus": "transporte",
+    "renta": "vivienda",
+    "alquiler": "vivienda",
+    "farmacia": "salud",
+    "cine": "ocio"
+  }
+}
